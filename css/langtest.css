@@ -1,0 +1,163 @@
+/* stylesheet for the Nuu-chah-nulth Interactive Alphabet Tutorial */
+
+/* main page regions */
+body {
+    background-color: #ecf5f8; /* This color matches the light end of the repeating background image. */
+    background-image: url(../static/background.png);
+    background-repeat: repeat-x;
+}
+div.container {
+    display: block;
+    width: 100%;
+    }
+div#header {
+    height: 80px;
+    width: 702px;
+    background-image: url(../static/banner.png);
+    background-repeat: no-repeat;
+}
+/*div.page {
+    background-image: url(../static/background.png);
+    background-repeat: repeat-x;    */
+}
+h1 { text-align: center; }
+p, ul, ol {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify;
+}
+/* fonts and font effects */
+body { font-family: "Aboriginal Sans", "Charis SIL", "Doulos SIL", "Aboriginal Serif", "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif; }
+div.nav, span.nav { font-family: Arial, sans-serif; }
+a { color: #ff0000; }
+[lang="nuk"], [lang="noo"], [lang="dtd"], [lang="myh"] { color: green; }
+
+/* navigation bar */
+/* centering based on matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support */
+div.nav {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1em;
+}
+div.nav ul {
+    clear: left;
+    float: left;
+    position: relative;
+    left: 50%;
+    margin: 0; /* remove this? */
+    padding: 0; /* change this? */
+    list-style: none;
+    text-align: center;
+}
+div.nav ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0; /* change this? */
+    padding: 0; /* change this? */
+    position: relative;
+    right: 50%;
+}
+div.nav ul li a {
+    display: block;
+    margin: 0 0 0 1px;
+    padding: 3px 10px;
+    line-height: 1.3em;    
+    text-decoration: none;
+    background-color: #a8a8a8;
+    font-weight: bold;
+    color: #ffffff;
+}
+div.nav ul li a:hover {
+    background-color: #778da8;
+    color: #000000;
+}
+
+/* tables */
+table {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.data { background-color: #ffffff; }
+table.contents { background-color: #d3d3d3; }
+table.wordlist { }
+th, td {
+    background-color: #d3d3d3;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+th.left, td.left { text-align: left; }
+th.center, td.center { text-align: center; }
+th.image, td.image {
+    border: 1px solid black;
+    padding: 1px;
+    background-color: #ffffff;
+}
+th.caption, td.caption {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf5f8;
+}
+
+/* alphabet chart */
+table.chart {
+}
+table.chart td {
+    height: 50px;
+    width: 75px;
+}
+table.chart td.text {
+    padding: 0;
+}
+table.chart td.text button {
+    display: block;
+    height: 50px;
+    width: 460px;
+    border-style: none;
+    color: #000000;
+    text-align: left;
+    font-family: "Charis SIL", "Aboriginal Sans", "Doulos SIL", "Aboriginal Serif", "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 16px;
+}
+table.chart td.text button.nuk { background-color: #90ee90; } /* lightgreen */
+table.chart td.text button.gloss { background-color: #d3d3d3; } /* This is the usual table cell background color */
+table.chart td.bigtext {
+    padding: 0;
+    color: #000000;
+    font-family: "Charis SIL", "Aboriginal Sans", "Doulos SIL", "Aboriginal Serif", "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+table.chart td.bigtext button {
+    display: block;
+    height: 50px;
+    width: 75px;
+    border-style: none;
+    background-color: #a8a8a8;
+    color: #000000;
+    font-family: "Charis SIL", "Aboriginal Sans", "Doulos SIL", "Aboriginal Serif", "Arial Unicode", "Lucida Sans Unicode", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+table.chart td.bigtext button:hover {
+    background-color: #778da8;
+    color: #000000;
+}
+/* table.chart td.bigtext button:focus */
+
+/* audio */
+audio {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    height: 0;
+    width: 0;
+}
